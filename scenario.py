@@ -22,7 +22,6 @@ class Position:
 
 @dataclass
 class Snake:
-    length: int
     head_at: Position
     body_at: deque
     facing: Facing = Facing.UP
@@ -41,7 +40,6 @@ class Scenario:
         self.height = 10
         self.width = 64
         self.snake = Snake(
-            length=4,
             head_at=Position(self.width // 2, self.height // 2),
             body_at=deque([
                 Position(self.width // 2, self.height // 2 - x - 1)
