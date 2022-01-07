@@ -54,4 +54,5 @@ class Game:
                       f'Score achieved: {self.score}\n\n')
 
 
-Game()
+if __name__ == '__main__':
+    Game()
